@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Úvodní stránka projektu" />
+
+    <title>Title Page</title>
+    <link rel="shortcut icon" href="favicon_64x64.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/title_page.css" type="text/css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css"
+    /> -->
+    <!-- <link rel="stylesheet" href="./style/bootstrap.css" type="text/css" /> -->
+  </head>
+  <body>
+    <div class="container page-topmargin navb" style="height: 53px">
+      <div class="row">
+        <!-- <div class="col-6">
+          <img src="./img/icon_white_50x50.png" alt="Main icon" />
+        </div> -->
+        <div class="col-12 col-md-3 col-lg-6 flexboxx">
+          <img
+            src="./img/icon_white_50x50.png"
+            class="navb_picture"
+            alt="Main icon"
+          />
+          <div class="dropdown inline_block d-md-none">
+            <!-- <img src="./img/menu.png" class="image--right" alt="Menu" /> -->
+            <button
+              onclick="myFunction()"
+              class="image--right dropbtn"
+            ></button>
+            <div id="myDropdown" class="dropdown_content">
+              <a href="./">Home</a>
+              <a href="#">About</a>
+              <a href="#">Pricing</a>
+              <a href="#">Contact</a>
+              <a href="#">Components</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 col-lg-6 navb_big">
+          <a href="#">Home</a><a href="#">About</a><a href="#">Pricing</a
+          ><a href="#">Contact</a><a href="#">Components</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div>
+      <p class="test">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo sit
+        explicabo necessitatibus expedita tempore atque quisquam odio possimus
+        similique ipsa.
+      </p>
+    </div> -->
+
+    <div class="container sellpicture">
+      <div class="row sellpicture_background">
+        <div class="col-12 col-md-6 sellpicture_content xxx">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            est a vel voluptatibus! Earum labore sunt itaque nulla vitae, minus
+            et ipsum vero. Ipsum fugit officiis suscipit illum fuga accusantium
+            ea repudiandae sunt iste tenetur molestias labore reprehenderit
+            beatae quo quas, quia assumenda exercitationem? Perspiciatis vel
+            voluptatum dolorem itaque reprehenderit!
+          </p>
+          <button type="submit">Download</button>
+        </div>
+      </div>
+    </div>
+    <script async src="./pages/dropdown.js"></script>
+  </body>
+</html>
