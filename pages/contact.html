@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kontaktní informace" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style/contact.css" type="text/css" />
+    <link rel="shortcut icon" href="../favicon_64x64.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="../style/navbar_footer_buttons.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <script src="./navbar.js"></script>
+
+    <div class="container margin--bottom">
+      <div class="row">
+        <div class="col-12"><div id="map"></div></div>
+      </div>
+    </div>
+    <div class="container contact">
+      <div class="row">
+        <div class="col-12 col-lg-6" style="z-index: 1">
+          <form
+            class="form"
+            action="https://formsubmit.co/rasticamichal@email.cz"
+            method="POST"
+          >
+            <input
+              required
+              class=""
+              type="text"
+              name="name"
+              value=""
+              placeholder="Full name"
+            />
+            <input
+              required
+              type="email"
+              name="email"
+              value=""
+              placeholder="Email"
+            />
+            <input
+              required
+              type="text"
+              name="Subject"
+              value=""
+              placeholder="Subject"
+            />
+            <textarea
+              required
+              name="text"
+              placeholder="Enter your message"
+              value=""
+              id=""
+              cols="30"
+              rows="5"
+            ></textarea>
+            <input
+              type="submit"
+              class="sellpicture_download form_button"
+              value="Send"
+            />
+          </form>
+        </div>
+        <div class="col-12 col-lg-6 contact_text">
+          <h3>Head Office</h3>
+          <p>
+            42 rue Rouelle <br />
+            75015 Paris FRANCE
+          </p>
+          <p>
+            contact@mybusiness.com <br />
+            +331 45 31 64 32
+          </p>
+          <h3>Employment</h3>
+          <p>
+            To apply for a job with our team, please feel free to send us your
+            Linkedin profile link ou CV to : employment@mybusiness.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer><script src="./footer.js"></script></footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzA22auDNIFSRiTPytfZVhtuFG_KHBhFQ&&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="./dropdown.js"></script>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 49.207, lng: 16.602 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+  </body>
+</html>

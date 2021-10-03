@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+
+.image {
+  background-image: url("../img/img-01.jpg");
+  padding-top: 35%;
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* outline: 1px solid #ff0; */
+  /* height: 200px; */
+}
+
+img {
+  width: 100%;
+}
+.about_header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.about_signature {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.about_signature {
+  font-family: "La Belle Aurore", cursive;
+
+  font-size: 36px;
+}
+div[class*="col"] {
+  margin-bottom: 1rem;
+}

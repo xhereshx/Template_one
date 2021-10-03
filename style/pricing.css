@@ -1,0 +1,70 @@
+.price_header {
+  text-align: center;
+}
+.price {
+  margin-left: auto;
+  margin-right: auto;
+}
+.packets {
+  margin: 1rem 0rem;
+  z-index: 0;
+}
+
+.packet_price {
+  height: 300px;
+  padding: 10%;
+  /* margin: 1rem 0.5rem; */
+  text-align: center;
+  position: relative;
+  color: var(--white);
+}
+.packet_text {
+  background-color: var(--almostwhite);
+  padding: 10%;
+  height: 30rem;
+  position: relative;
+}
+.packet_vertcentr {
+  margin: 0;
+  position: relative;
+  top: 50%;
+
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* .packet_vertcentr p {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.packet--blue {
+  background-color: #4e74ff;
+}
+.packet--lightblue {
+  background-color: #3cbffa;
+}
+.packet--darkblue {
+  background-color: #1f2946;
+}
+h6 span {
+  font-size: 4em;
+  margin-right: 1rem;
+}
+.packet_ul li {
+  list-style-image: url("../img/Check_list.png");
+  list-style-position: outside;
+}
+.packet_button {
+  position: absolute;
+  top: 80%;
+  z-index: initial;
+}
+.col-lg-4 {
+  /* margin-bottom: 10rem; */
+}
+@media screen and (min-width: 62em) {
+  .packets {
+    margin-bottom: 2rem;
+  }
+}
+/* 992px */

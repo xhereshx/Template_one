@@ -1,0 +1,176 @@
+html {
+  --gray: #555;
+  --black: #000;
+  --white: #fff;
+  --darkblue: #000033;
+  --almostwhite: #dddddd;
+}
+.container {
+  margin-top: 2rem;
+}
+.navb {
+  position: sticky;
+
+  top: 0px;
+  z-index: 2;
+}
+.flexboxx {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.navb_picture {
+  height: 50px;
+  width: 50px;
+}
+.dropdown a:hover {
+  color: var(--black);
+}
+.inline_block {
+  display: inline-block;
+}
+.image--right {
+  text-align: end;
+}
+.dropbtn {
+  background-image: url("../img/menu.png");
+  background-color: var(--white);
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+}
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: var(--white);
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  width: 101vw;
+  transform: translate(calc(-100vw + 62px));
+  padding: 1rem 0rem;
+}
+.dropdown_content a {
+  background-color: var(--white);
+  color: var(--gray);
+
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.navb_big {
+  background-color: #fff;
+}
+.navb_big a {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  height: 100%;
+  /* vertical-align: baseline; */
+  line-height: 50px;
+  color: var(--gray);
+  text-decoration: none;
+}
+.navb_big a:hover {
+  color: var(--black);
+  text-decoration: none;
+}
+.show {
+  display: block;
+}
+div[class*="col"] {
+  position: static;
+}
+footer a {
+  color: #000;
+}
+footer p {
+  font-size: 0.75rem;
+}
+.footer {
+  line-height: 2rem;
+}
+.footer_icons img {
+  width: 32px;
+  height: 32px;
+}
+.footer_icons img:hover {
+  width: 64px;
+  height: 64px;
+}
+.footer--left {
+  float: left;
+}
+.sellpicture_download {
+  display: inline-block;
+  background-color: #9966ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.sellpicture_download:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #00f;
+}
+/* .xxx p {
+  margin: 2rem 0rem;
+}
+.xxx h1 {
+  margin: 1rem 0rem;
+} */
+footer input {
+  height: 45px;
+}
+footer input[type="email"] {
+  width: 85%;
+  border: var(--almostwhite) 1px solid;
+}
+footer input[type="submit"] {
+  width: 15%;
+  /* display: inline-block; */
+  background-color: #9966ff;
+  color: #fff;
+  text-decoration: none;
+  border: transparent 1px solid;
+}
+
+@media screen and (min-width: 36em) {
+  .dropdown_content {
+    transform: translate(calc(-100vw + 178px));
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    width: 100vw;
+    padding: 1rem 0rem;
+
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    transform: translate(calc(-100vw + 50px));
+    transform: translate(calc(-100vw + (((100vw - 540px) / 2) + 65px)));
+  }
+  /* -100vw aby se menu otočilo na druhou stranu. Bez toho by začínalo přesně pod hranou tlačítka. 65px, zhruba šířka tlačítla s paddingem. 540px šířka divu, v kterém je obrázek a tlačítko. Snažím se od translate odečíst šířku paddingu, který je mezi tlačítkem a levou stránkou obrazovky. Pokud bych to neudělal tak by odkazy byly v levo za horizontem obrazovky. Vezmu teda 100vw,což je šířka obrazovky, odečtu od toho 540px cože je šířka divu. Tím dostanu kolik px jsou oba padding(tzn, ten od obrázku nalevo, a ten od tlačítka na pravo), protože jsou dva tak to podělím dvěmi a přičtu šířku tlačítka, čímž menu začne zabírat přesně 100vh současné obrazovky */
+  /* -100vw + 88px */
+}
+/* 576px */
+@media screen and (min-width: 48em) {
+  .dropdown_content {
+    transform: translate(calc(-100vw + (((100vw - 720px) / 2) + 65px)));
+    /* display: none; */
+  }
+
+  /* stejný princip jako u předchozího, jeho změnan šířka divu s obrázkem a tlačítkem, protože je jinak široký*/
+  .sellpicture_content {
+    /* text-align: center; */
+  }
+  .dropdown {
+    display: none;
+  }
+  /* .navb_big {
+    display: inline-block;
+  } */
+}

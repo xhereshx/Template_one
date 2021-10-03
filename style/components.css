@@ -1,0 +1,18 @@
+.components_indent {
+  margin: auto auto auto 10%;
+}
+.components_headings h1,
+.components_headings h2,
+.components_headings h3,
+.components_headings h4 {
+  margin: 0rem auto;
+  border: 1px solid var(--almostwhite);
+  line-height: 2.5;
+}
+.margin--bottom {
+  margin-bottom: 2rem;
+}
+img {
+  width: 32px;
+  margin-right: 2px;
+}

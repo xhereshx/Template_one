@@ -1,0 +1,41 @@
+#map {
+  height: 300px;
+}
+.contact {
+  margin-bottom: 5rem;
+}
+form input,
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+}
+/* input[type="text"] {
+  margin-top: 2rem;
+} */
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea[name="text"] {
+  margin-top: 0.5rem;
+  border: var(--almostwhite) 1px solid;
+}
+.margin--bottom {
+  margin-bottom: 3rem !important;
+}
+.form_button {
+  margin-top: 0.5rem;
+  width: 5rem;
+}
+.contact_text {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 62em) {
+  .contact_text {
+    margin-top: initial;
+  }
+  .contact_text p,
+  .contact_text h3 {
+    padding-left: 20%;
+  }
+}
+/* 992px */
